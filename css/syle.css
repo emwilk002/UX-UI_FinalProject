@@ -74,7 +74,7 @@ nav {
 .secondary-btn {
     background-color: #87D2DB;
     border: none;
-    color: #251C18;
+    color: #251C18 !important;
     padding: 5px 32px;
     text-align: center;
     text-decoration: none;
@@ -268,6 +268,7 @@ h3 {
 
 .band-card img{
     padding: 20px;
+    object-fit: scale-down;
 }
 
 
@@ -325,8 +326,94 @@ footer {
     background-color: #251C18;
     color: white;
     margin: 0px;
+    padding-top: 40px;
+    Padding-left: 50px;
+    padding-bottom: 25px;
 }
 
+footer img{
+    margin: 10px 30px 0px 0px;
+}
 
+.text-uppercase {
+    font-family: 'Teko', sans-serif;
+    font-size: 28px;
+}
 
+.list-unstyled a{
+    color: white;
+    font-family: 'Teko',sans-serif;
+    font-size: 24px;
+}
+
+.list-unstyled a:hover{
+    color: #77efff;
+    text-decoration: none;
+}
+
+footer p {
+    margin: 2px;
+}
+
+#contact-container {
+    border-right: 1px solid white;
+    height: 100%;
+}
+
+#contact-container a{
+    color: white;
+}
+
+#social-container {
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 11px;
+    padding-left: 28px;
+}
+
+#social-container img{
+    width: 30px;
+    height: 30px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .hero-color-block {
+      background-color: transparent;
+      margin-top: 90px;
+    }
+
+    #logo {
+        min-width: 200px;
+        position: absolute;
+        display: block;
+        float: right;
+
+    }
+
+    .hero-color-block h1 {
+        display: none;
+    }
+
+    .hero-color-block p{
+        display: none;
+    }
+
+    .hero-align {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .jumbotron a{
+        align-self: flex-end;
+    }
+
+  }
 
