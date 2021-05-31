@@ -9,6 +9,26 @@
         margin: 0px;
 }
 
+#mission-bg { 
+    background: no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-image: url(../images/piano.png);
+    margin: 0px;
+}
+
+#north-metro-bg { 
+    background: no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-image: url(../images/north-metro.png);
+    margin: 0px;
+}
+
 nav {
     padding: 0 20px 0 0 !important;
 
@@ -197,6 +217,11 @@ nav {
     border: none !important;
 }
 
+
+.card-caption {
+    font-family: 'Teko' sans-serif;
+    font-size: 14px;
+}
 .calendar {
     height: 100% !important;
 }
@@ -214,6 +239,13 @@ h3 {
     display: flex;
     flex-direction: column;
 }
+
+figcaption { 
+    display: block;
+    font-family: 'Teko';
+    font-size: 18px;
+    padding-left:20px;
+  }
 
 .vision-card-body-btn a{
     margin: 0 40% 0 40%;
@@ -264,6 +296,18 @@ h3 {
     background-color: #F5EFED;
     box-shadow: 5px 4px #acabab !important;
     border-radius: 5px;
+}
+
+.card-text-orange {
+    background-color: #FFA90A;
+    padding:15px;
+
+}
+
+.card-text-blue {
+    background-color: #77efff;
+    padding:15px;
+
 }
 
 .band-card img{
