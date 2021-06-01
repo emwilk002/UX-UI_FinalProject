@@ -39,6 +39,24 @@ nav {
  }
 
 
+.dropdown-item:hover{
+    background-color: #c3f4fc !important;
+}
+
+.dropdown-item:active{
+    background-color:#77efff !important;
+    color: black !important;
+}
+
+#navbarDropdown1:hover{
+    border: 2px solid #77efff;
+    border-radius: 4px;
+    color: black;
+    margin: -2px;
+}
+
+
+
 
 .xnavbar-nav {
     color: white !important;
@@ -296,17 +314,17 @@ figcaption {
     background-color: #F5EFED;
     box-shadow: 5px 4px #acabab !important;
     border-radius: 5px;
+    padding:15px;
 }
 
 .card-text-orange {
     background-color: #FFA90A;
-    padding:15px;
 
 }
 
 .card-text-blue {
     background-color: #77efff;
-    padding:15px;
+
 
 }
 
@@ -363,7 +381,25 @@ figcaption {
 }
 
 .bottom-btn-container {
-    width: 250px;
+    width: fit-content;
+    min-width: 250px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+#bottom-btn {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bottom-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 footer {
@@ -426,6 +462,10 @@ footer p {
     height: 30px;
 }
 
+#testimonials-row {
+    margin-top: 10px !important;
+}
+
 @media only screen and (max-width: 1000px) {
     .hero-color-block {
       background-color: transparent;
@@ -459,5 +499,77 @@ footer p {
         align-self: flex-end;
     }
 
-  }
+    #testimonials-row {
+        margin: 0px;
+    }
 
+    
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body.secondary-btn {
+    width: 60%;
+    align-self: center;
+    margin-top: 10px !important;
+}
+
+.card-body.primary-btn {
+    width: 60%;
+    align-self: center;
+    margin-top: 10px !important;
+}
+.vision-card-body-btn a{
+    margin: auto;
+}
+
+.calendar {
+margin-bottom: 20px !important;
+}
+
+.news-card{
+    margin-bottom: 10px;
+}
+
+.band-card {
+    margin-bottom: 20px;
+}
+.side-color {
+    margin-bottom: px;
+}
+
+.side-color {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 7%;
+    top: 0px;
+    left: 0px;
+    border-radius: 5px 5px 0px 0px;   
+}
+
+.band-card-title {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+#contact-container {
+    border-right: 0px;
+    height: 100%;
+}
+
+#social-container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+}
