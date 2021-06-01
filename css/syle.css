@@ -396,11 +396,6 @@ figcaption {
     margin-right: auto;
 }
 
-#bottom-wrapper {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
 
 footer {
     background-color: #251C18;
