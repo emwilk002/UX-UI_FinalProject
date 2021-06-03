@@ -1,10 +1,22 @@
+// Mobile Nav button
+
+$(document).ready(function () {
+
+    $('.first-button').on('click', function () {
+  
+      $('.animated-icon1').toggleClass('open');
+    });
+  });
+
+// Dropdown
+
 const $dropdown = $(".dropdown");
 const $dropdownToggle = $(".dropdown-toggle");
 const $dropdownMenu = $(".dropdown-menu");
 const showClass = "show";
  
 $(window).on("load resize", function() {
-  if (this.matchMedia("(min-width: 768px)").matches) {
+  if (this.matchMedia("(min-width: 1000px)").matches) {
     $dropdown.hover(
       function() {
         const $this = $(this);
