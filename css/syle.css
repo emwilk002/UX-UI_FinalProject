@@ -385,6 +385,9 @@ figcaption {
     min-width: 250px;
     text-align: center;
     white-space: nowrap;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #bottom-btn {
@@ -394,6 +397,11 @@ figcaption {
     align-content: center;
     margin-left: auto;
     margin-right: auto;
+}
+
+.link-btn {
+    align-self: center !important;
+
 }
 
 
@@ -465,14 +473,7 @@ footer p {
     .hero-color-block {
       background-color: transparent;
       margin-top: 90px;
-    }
-
-    #logo {
-        min-width: 200px;
-        position: absolute;
-        display: block;
-        float: right;
-
+      width: 100%;
     }
 
     .hero-color-block h1 {
@@ -490,16 +491,25 @@ footer p {
         align-items: center;
     }
 
-    .jumbotron a{
-        align-self: flex-end;
-    }
-
     #testimonials-row {
         margin: 0px;
     }
 
-    
+    #logo {
+        position: absolute;
+        top: -120px;
+        object-fit: scale-down;
+        padding-top: 0px;
+        margin-top: 0;
+        min-width: 200px;
+        width: 30%;
+        right: 0px;
+        margin-right: 5%;
+    }
 
+    .navbar {
+        margin: 40px;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -565,6 +575,31 @@ margin-bottom: 20px !important;
     margin-right: auto;
 }
 
+.news-card-container{
+    flex-direction: column-reverse;
+    position: relative;
+}
+.news-card img{
+    object-fit: cover;
+    width: 60%;
+    align-self: center;
+}
 
+.jumbotron .primary-btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+}
+
+@media only screen and (max-width: 750px) {
+.bottom-btn-container {
+    width: fit-content;
+    text-align: center;
+    white-space: nowrap;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
 }
